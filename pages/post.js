@@ -65,6 +65,7 @@ const Post = () => {
 
     useEffect(() => {
         checkUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, loading])
 
     return (

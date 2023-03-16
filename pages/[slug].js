@@ -42,6 +42,7 @@ const Details = () => {
     useEffect(() => {
         if(!router.isReady) return;
         getComments();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [router.isReady])
 
     return (

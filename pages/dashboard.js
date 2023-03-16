@@ -34,6 +34,7 @@ const Dashboard = () => {
     // Get users data
     useEffect(() => {
         getData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, loading])
 
     return (

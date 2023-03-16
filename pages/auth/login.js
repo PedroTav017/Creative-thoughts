@@ -5,7 +5,7 @@ import { auth } from "@/utils/firebase";
 import { useRouter } from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-export default function login(){
+const Login = () => {
     const route = useRouter();
     const [user, loading] = useAuthState(auth);
 
@@ -27,6 +27,7 @@ export default function login(){
         } else {
             console.log("You're logged out.")
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user])
 
     return (
@@ -42,3 +43,5 @@ export default function login(){
         </div>
     )
 }
+
+export default Login
